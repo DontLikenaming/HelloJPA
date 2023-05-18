@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping SYSTEM
+        "http://www.hibernate.org/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="model.Customers" table="customers">
+        <id name="userid" type="string" column="userid">
+            <generator class="identity"></generator>
+        </id>
+
+        <property name="name" column="name" type="string"/>
+        <property name="age" column="age" type="int"/>
+        <property name="grade" column="grade" type="string"/>
+        <property name="job" column="job" type="string"/>
+        <property name="milege" column="milege" type="int"/>
+    </class>
+
+</hibernate-mapping>
